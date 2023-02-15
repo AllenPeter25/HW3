@@ -39,6 +39,10 @@ body{
     color: rgb(255, 98, 0);
 }
 
+.company-name:hover {
+    color: rgb(255, 98, 0);
+}
+
 .card-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +88,6 @@ footer{
     text-align: center;
     color: white;
     font-size: 12px;
-    width: 1056px;
     margin-top: 61px;
     margin-bottom: 20px;
 }
