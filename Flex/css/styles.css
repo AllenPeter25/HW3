@@ -1,15 +1,17 @@
 body{
-    padding-top: 49px;
-    margin-left: 210px;
-    margin-right: auto;
+    font-family: Verdana;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.cards>img{
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.images{
     width: 307px;
-    height: 200px;
     margin-bottom: 22px;
     border-width: 3px;
     border-style: solid;
@@ -22,45 +24,58 @@ body{
 }
 
 .logo-image{
-    width: 46px;
-    height: 44px;
+    width: 52px;
+    height: 52px;
+    background-image: url(/img/logo.png);
+    cursor: pointer;
     margin-right: 15px;
 }
 
-.container{
+.logo-image:hover{
+    background-position: 56px 0;
+}
+
+.logo-image:hover+.company-name{
+    color: rgb(255, 98, 0);
+}
+
+.card-wrapper{
     display: flex;
     flex-wrap: wrap;
     gap: 69px;
 }
 
+.company-name{
+    padding-top: 10px;
+}
+
 header{
+    margin-top: 49px;
     margin-bottom: 48px;
     color: white;
     display: flex;
 }
 
-.company-name1{
-    font-family: Verdana;
+.milan{
     font-size: 29px;
     font-weight: bold;
     line-height: 0.72;
     cursor: pointer;
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
-.company-name2{
-    font-family: Verdana;
+.holidays{
     font-size: 18px;
     font-weight: bold;
     line-height: 1.17;
     cursor: pointer;
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
 .contact-info{
-    margin-left: 650px;
+    padding-top: 10px;
+    margin-left: 665px;
     font-size: 18px;
-    font-family: Verdana;
     line-height: 1.17;
     text-align: right;
 }
@@ -68,17 +83,17 @@ header{
 footer{
     text-align: center;
     color: white;
-    font-family: Verdana;
     font-size: 12px;
     width: 1056px;
     margin-top: 61px;
+    margin-bottom: 20px;
 }
 
 .cards{
     color: white;
-    font-family: Verdana;
     font-size: 18px;
     text-align: center;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -108,10 +123,6 @@ footer{
     opacity: 1;
 }
 
-.cards:hover>p{
-    color: rgb(255, 98, 0);
-}
-
-.company-name:hover, .logo-image{
+.cards:hover .label{
     color: rgb(255, 98, 0);
 }
