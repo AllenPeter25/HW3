@@ -31,15 +31,15 @@ body{
     margin-right: 15px;
 }
 
-.logo-image:hover{
+.logo{
+    display: flex;
+}
+
+.logo:hover .logo-image{
     background-position: 56px 0;
 }
 
-.logo-image:hover+.company-name{
-    color: rgb(255, 98, 0);
-}
-
-.company-name:hover {
+.logo:hover .company-name{
     color: rgb(255, 98, 0);
 }
 
@@ -65,7 +65,7 @@ header{
     font-weight: bold;
     line-height: 0.72;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .holidays{
@@ -73,7 +73,7 @@ header{
     font-weight: bold;
     line-height: 1.17;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .contact-info{
